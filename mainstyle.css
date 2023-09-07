@@ -1,0 +1,444 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  .container {
+    position: relative;
+    opacity: 0.90;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color:white;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header {
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+      color: white;
+  }
+  #brand span{
+      color: hotpink;
+  }
+  
+  header ul, .buttons {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar{
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+  }
+  
+  .navbar ul a {
+    color: white;
+  }
+  
+  .navbar ul li {
+    padding: 5px;
+    margin-right: 30px;
+  }
+  
+  .navbar ul li a:hover {
+    color: hotpink;
+    transition: 0.3s;
+  }
+  
+  .buttons li:hover{
+    background-color: hotpink;
+  }
+  
+  .buttons #signup a:hover{
+    color: white;
+  }
+  
+  .buttons #login a:hover{
+    color: white;
+  }
+  
+  #login,
+  #signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+  }
+  
+  #login {
+    border: 1px solid hotpink;
+    transition: 0.3s;
+  }
+  
+  #signup {
+    border: 1px solid hotpink;
+    transition: 0.3s;
+  }
+  
+  #signup a {
+    color:hotpink;
+  }
+  
+  #login a {
+    color: hotpink;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: auto;
+    width: 100%;
+    background-color: #1d1f1d;
+    z-index: 1000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .mobile-menu #signup:hover{
+    background-color: hotpink;
+    color: white;
+    }
+      
+    .mobile-menu #login:hover{
+    background-color: hotpink;
+    color: white;
+    }
+  
+  .mobile-menu li {
+    margin-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  .footer{
+    background: #24262b;
+    position: absolute;
+    width: 100%;
+    height: 310px;
+  }
+  
+  .footer a{
+    text-decoration: none;
+    color: antiquewhite;
+  }
+  
+  .footer .row{
+    display: flex;
+  
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  .footer .footer-col1 h4{
+    color: antiquewhite;
+    margin-top: 45px;
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+  
+  .footer .footer-col h4{
+    color: antiquewhite;
+    margin-top: 45px;
+    margin-bottom: 5px;
+    font-size: 17px;
+  }
+  
+  .footer-col{
+    width: 200px;
+  }
+  
+  .footer-col1{
+    margin-left: 30px;
+    width: 200px;
+  }
+  
+  .legal{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  
+  .legal p{
+    color: antiquewhite;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .legal a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .social-links a i{
+    margin: 3px;
+    font-size: 20px;
+    transition-duration: .5s;
+  }
+  
+  .social-links a i:hover{
+    color: hotpink;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+  }
+  
+  .footer-col a:hover{
+    color: hotpink;
+    padding-left: 20px;
+    transition-duration: .5s;
+  }
+  .right-container form{
+    position: absolute;
+  
+  }
+  .subscribe{
+    display: flex;
+    margin-left: 75%;
+    margin-top: -160px;
+  }
+  
+  .subscribe form .email{
+    height: 40px;
+    margin-top: 10px;
+    width: 266px;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  
+  .subscribe form .email:focus{
+    border: 0px;
+    box-shadow: 0 0 5px 5px hotpink;
+    border: none;
+  }
+  
+  .subscribe form button{
+    height: 40px;
+    width: 266px;
+    margin-top: 20px;
+    background: hotpink;
+    border-radius: 5px;
+  }
+  
+  .subscribe form button:hover{
+    background: violet;
+    font-weight: bolder;
+    box-shadow: 1px 1px 0px black;
+    cursor: pointer;
+    transition-duration: .5s
+  }
+  
+  .subscribe h4{
+    color: antiquewhite;
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .mid{
+      display: none;
+    }
+    
+  
+    }
+
+    
+.mid{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+
+}
+
+.mid h1{
+  color: hotpink;
+  font-size: 3rem;
+  margin-bottom: 35px; 
+  text-shadow: 3px 3px #000000;
+}
+.btn a{
+  text-decoration: none;
+  padding: 0.9rem 1.6rem;
+  border: 1px solid #ff69b4;
+  color: hotpink;
+  transition-duration: .5s;
+  box-shadow: 2px 2px black;
+  text-shadow: 2px 2px #000000;
+  font-weight: 700;
+}
+.btn a:hover{
+  border: 1px solid hotpink;
+  box-shadow: 2px 2px 2px 2px black;
+  font-weight: bolder;
+  padding: 1.1rem 1.8rem;
+  color: white;
+}
+
